@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #000; /* Black */
+    background-image: url("portada/portada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app-container {
+    background-color: #800080; /* Purple */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    position: relative; /* To contain the absolute positioned image */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White */
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #800080; /* Purple */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    color: #fff; /* White */
+}
+
+input[type="number"],
+textarea {
+    width: 200px;
+    padding: 8px;
+    border: 3px solid #fff; /* White */
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Animation */
+}
+
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #00FFFF; /* Cyan */
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#total {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff; /* White */
+}
+
+#total-ventas {
+    color: #5cb85c;
+}

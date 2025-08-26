@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoloApp - Ventas Diarias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #000;">
+    <div id="app-container">
+        <h1>GoloApp - Ventas Diarias</h1>
+        <img src="imagen de icono/ce9ff502-d555-4605-be0a-924741f2f50d.png" alt="GoloApp Icon" class="app-image">
+
+        <section id="currency-input">
+            <h2>VENTAS MAYORISTAS - RUTA (PEN)</h2>
+            <div class="input-group">
+                <label for="billetes-200">Billetes de 200:</label>
+                <input type="number" id="billetes-200" value="0">
+            </div>
+            <div class="input-group">
+                <label for="billetes-100">Billetes de 100:</label>
+                <input type="number" id="billetes-100" value="0">
+            </div>
+            <div class="input-group">
+                <label for="billetes-50">Billetes de 50:</label>
+                <input type="number" id="billetes-50" value="0">
+            </div>
+            <div class="input-group">
+                <label for="billetes-20">Billetes de 20:</label>
+                <input type="number" id="billetes-20" value="0">
+            </div>
+            <div class="input-group">
+                <label for="billetes-10">Billetes de 10:</label>
+                <input type="number" id="billetes-10" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-5">Monedas de 5:</label>
+                <input type="number" id="monedas-5" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-2">Monedas de 2:</label>
+                <input type="number" id="monedas-2" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-1">Monedas de 1:</label>
+                <input type="number" id="monedas-1" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-050">Monedas de 0.50:</label>
+                <input type="number" id="monedas-050" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-020">Monedas de 0.20:</label>
+                <input type="number" id="monedas-020" value="0">
+            </div>
+            <div class="input-group">
+                <label for="monedas-010">Monedas de 0.10:</label>
+                <input type="number" id="monedas-010" value="0">
+            </div>
+        </section>
+
+        <section id="no-vendidos">
+            <h2>Nota de Credito</h2>
+            <textarea id="productos-no-vendidos" placeholder="Lista de productos no vendidos o sobrantes"></textarea>
+        </section>
+
+        <section id="total">
+            <h2>Total de Ventas:</h2>
+            <p id="total-ventas">0.00</p>
+        </section>
+
+        <div id="date-input">
+            <h2>Seleccionar Fecha</h2>
+            <input type="date" id="sales-date">
+        </div>
+
+        <button id="calcular">Calcular Total</button>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
